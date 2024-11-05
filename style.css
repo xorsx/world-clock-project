@@ -1,9 +1,57 @@
 body {
-  background: #dfd3c3;
+  background: #f9f7fe;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
 }
 
 h1 {
   text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+h2 {
+  margin: 0 0 5px;
+  font-size: xx-large;
+}
+
+select {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+}
+.world-clock-container {
+  max-width: 60vw;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px 0px;
+  border-radius: 16px;
+  width: 90%;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  border-bottom: 1px dashed grey;
+  padding: 10px 0;
+  font-family: sans-serif;
+}
+.city:last-child {
+  border: none;
+}
+.date {
+  opacity: 0.5;
+}
+.time {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.time small {
+  font-size: small;
+  line-height: 100%;
+  vertical-align: middle;
 }
 
 footer {
