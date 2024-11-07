@@ -10,17 +10,17 @@
   </head>
   <body>
     <div class="world-clock-container">
-      <header>
-        <h1>World Clock</h1>
-        <select name="city" id="city">
-          <option value="">Choose a city</option>
-          <option value="current">Current city</option>
-          <option value="">London</option>
-          <option value="">New York</option>
-          <option value="">Fez</option>
-        </select>
-      </header>
-      <main>
+      <h1>World Clock</h1>
+
+      <select id="city">
+        <option value="">Choose a city</option>
+        <option value="current">Current city</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Asia/Katmandu">Katmandu</option>
+      </select>
+
+      <div id="cities">
         <div class="city" id="los-angeles">
           <div>
             <h2>Los Angeles</h2>
@@ -31,22 +31,6 @@
           </div>
         </div>
 
-        <div class="city" id="sydney">
-          <div>
-            <h2>Sydney</h2>
-
-            <div class="date" id="sydney-date">November 5th 2024</div>
-          </div>
-          <div class="time" id="sydney-time">1:48:15 <small>PM</small></div>
-        </div>
-        <div class="city" id="tokyo">
-          <div>
-            <h2>Tokyo</h2>
-
-            <div class="date" id="tokyo-date">November 5th 2024</div>
-          </div>
-          <div class="time" id="tokyo-time">1:48:15 <small>PM</small></div>
-        </div>
         <div class="city" id="paris">
           <div>
             <h2>Paris</h2>
@@ -55,7 +39,7 @@
           </div>
           <div class="time" id="paris-time">1:48:15 <small>PM</small></div>
         </div>
-      </main>
+      </div>
     </div>
     <footer>
       Built by
