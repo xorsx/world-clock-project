@@ -11,6 +11,30 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  // MexicoCity
+  let mexicoCityElement = document.querySelector("#mexico-city");
+  if (mexicoCityElement) {
+    let mexicoCityDateElement = mexicoCityElement.querySelector(".date");
+    let mexicoCityTimeElement = mexicoCityElement.querySelector(".time");
+    let mexicoCityTime = moment().tz("America/Mexico_city");
+
+    mexicoCityDateElement.innerHTML = mexicoCityTime.format("MMMM Do YYYY");
+    mexicoCityTimeElement.innerHTML = mexicoCityTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+  // Seoul
+  let seoulElement = document.querySelector("#seoul");
+  if (seoulElement) {
+    let seoulDateElement = seoulElement.querySelector(".date");
+    let seoulTimeElement = seoulElement.querySelector(".time");
+    let seoulTime = moment().tz("Asia/Seoul");
+
+    seoulDateElement.innerHTML = seoulTime.format("MMMM Do YYYY");
+    seoulTimeElement.innerHTML = seoulTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
   // Paris
   let parisElement = document.querySelector("#paris");
   if (parisElement) {
